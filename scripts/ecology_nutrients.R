@@ -89,7 +89,7 @@ ggsave("./output/meanwinterNplot.png")
 
 # Write .csv to join to layer in ArcGIS pro
 
-write.csv(meanwinterN, file = "Ecology_MeanWinterNutrients.csv")
+write.csv(meanwinterN, file = "./output/Ecology_MeanWinterNutrients.csv")
 
 #### CALCULATE MEAN SUMMER SURFACE NUTRIENTS ####
 
@@ -121,6 +121,7 @@ summerNplot + geom_point(aes(y=NH4_Lab), color = "blue") +
   geom_point(aes(y=NO2_Lab), color = "green") + 
   geom_point(aes(y=NO3_Lab), color = "red") +
   geom_point(aes(y=DIN), color = "black")
+ggsave("./output/summerNplot.png")
 
 # Calculate mean NH4, No2, and NO3 AND DIN for each station
 
@@ -135,9 +136,12 @@ meansummerNplot + geom_point(aes(y=SummerMeanNH4), color = "blue") +
   geom_point(aes(y=SummerMeanNO2), color = "green") + 
   geom_point(aes(y=SummerMeanNO3), color = "red") +
   geom_point(aes(y=SummerMeanDIN), color = "black")
+ggsave("./output/meansummerNplot.png")
 
 # Looks ok
 
 # write csv to join to layer in pro
 
-write.csv(meansummerN, file = "Ecology_MeanSummerNutrients.csv")
+write.csv(meansummerN, file = "./output/Ecology_MeanSummerNutrients.csv")
+
+# Next steps are to bring csv files into pro for interpolation
