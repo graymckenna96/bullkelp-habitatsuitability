@@ -1,1 +1,2 @@
-Ecology nutrient data recieved via email in march 2022
+Ecology nutrient data is from the Marine water & sediment monitoring program and was recieved via email in March 2022.
+Link: https://ecology.wa.gov/Research-Data/Monitoring-assessment/Puget-Sound-and-marine-monitoring
